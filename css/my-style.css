@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Marvel";
+  src: url("../fonts/Marvel-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Bis";
+  src: url("../fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf");
+}
+
 body {
   font-family: "Open Sans", "sans-serif";
 }
@@ -23,6 +38,27 @@ body {
   background-color: #ffffff;
 }
 
-.text-family {
-  font-family: "Open Sans";
+.nav-text {
+  letter-spacing: 1px;
+}
+
+.icon {
+  font-size: 36px;
+  width: 36px;
+  height: 36px;
+  color: #22b8f0;
+}
+
+#informations i {
+  color: #999999;
+}
+
+.btn-services {
+  color: #fff;
+  background-color: #22b8f0;
+  border-color: #22b8f0;
+}
+
+#services {
+  font-family: "Marvel", "Open Sans", "sans-serif";
 }
