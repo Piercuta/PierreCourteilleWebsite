@@ -9,6 +9,8 @@
     <link href="./css/bootstrap.css" rel="stylesheet" />
     <link href="./css/all.css" rel="stylesheet" />
     <link href="./css/my-style.css" rel="stylesheet" />
+    <link href="./css/animation.css" rel="stylesheet" />
+    <link href="./css/skill-bar.css" rel="stylesheet" />
     <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&amp;subset=latin" rel="stylesheet" type="text/css"> -->
     </head>
   <body>
@@ -18,9 +20,9 @@
             <div class="row ">
                <div class="col">
                 <ul class="list-inline my-auto">
-                    <li class="list-inline-item"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fa-brands fa-skype"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/piercuta"><i class="fa-brands fa-github"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/pierre-courteille-b7432b186/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="skype:pierre.courteille95?chat"><i class="fa-brands fa-skype"></i></a></li>
                 </ul>
                </div>
                <div class="col d-flex justify-content-center">
@@ -42,10 +44,10 @@
     
     <header class="white-light sticky-top">
         <div class="container">
-            <div class="row" style="min-height: 90px;">
-                <div class="col d-flex">
+            <div class="row justify-content-between" style="min-height: 90px;">
+                <div class="col-1 d-flex">
                     <a href="/" class="my-auto">
-                        <img src="./images/finishLogoSiteWeb.png" alt="logo">
+                        <img src="./images/finishLogoSiteWeb.png" class="logo" alt="logo">
                     </a>
                 </div>
                 <div class="col d-flex justify-content-end">
@@ -64,7 +66,7 @@
         </div>
     </header>
 
-    <section id="carousel" class="grey-light mb-5">
+    <section id="carousel" class="grey-light">
         <div class="container-fluid">
             <div class="row">
 
@@ -110,7 +112,7 @@
         </div>
     </section>
 
-    <section id="services" class="white-light my-5">
+    <section id="services" class="white-light py-5">
         <div class="container">
             <div class="row">
                 <h1 class="text-center">MES SERVICES</h1>
@@ -124,9 +126,9 @@
                             <i class="fa fa-chart-column icon"></i>
                         </div>
                         <h3 class="text-center my-4">Data scientist</h3>
-                        <div class="text-center my-4">
+                        <p class="text-center my-4">
                             Afin de rendre votre entreprise toujours plus rentable, je conçois des logiciels d'aide à la décision. Je peux analyser toutes sortes de données (fichiers csv, base de données...).
-                        </div>
+                        </p>
 
                     </div>
 
@@ -184,9 +186,9 @@
                             <i class="fa fa-cog icon"></i>
                         </div>
                         <h3 class="text-center my-4">Développeur full stack</h3>
-                        <div class="text-center my-4">
+                        <p class="text-center my-4">
                             Fort de nombreuses expériences dans la programmation, je peux vous aider à développer votre logiciel dans de nombreuses technologies (C, Pyhton, Java, AWS...).
-                        </div>
+                        </p>
                     </div>
 
                     <div class="text-center fade-in-up">
@@ -238,9 +240,9 @@
                             <i class="fa fa-mortar-board icon"></i>
                         </div>
                         <h3 class="text-center my-4">Formateur</h3>
-                        <div class="text-center my-4">
+                        <p class="text-center my-4">
                             Aimant transmettre, j'enseigne chaque année à de nombreux élèves les rudiments ainsi que des notions avancées de différents langages (Java, C#, C++, Python, Javascript).
-                        </div>
+                        </p>
                     </div>
 
 
@@ -290,32 +292,171 @@
         </div>
     </section>
 
-    <section id="about-me" class="grey-light my-5">
+    <section id="about-me" class="grey-light py-5">
         <div class="container">
             <div class="row">
                 <h1 class="text-center">À PROPOS</h1>
+                <p class="text-center">Un développeur indépendant polyvalent !</p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-1"><span class="bullet-circle">1</span></div>
+                        <div class="col mx-2">
+                            <h3>Un développeur mathématicien</h3>
+                            <p>Mon cursus bi-disciplinaire (mathématiques et informatique) me permet de surmonter n'importe quel challenge.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><span class="bullet-circle">2</span></div>
+                        <div class="col mx-2">
+                            <h3>Un Français à l'aise avec l'anglais</h3>
+                            <p>Loin de la langue de Molière j'ai su apprivoiser celle de Shakespeare.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><span class="bullet-circle">3</span></div>
+                        <div class="col mx-2">
+                            <h3>Un développeur manager</h3>
+                            <p>Ayant manager une équipe de 25 personnes, je conçois les difficultés de la gestion d'une entreprise.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <i class="fa fa-desktop desktop-img"></i>
+                </div>
             </div>
             
         </div>
     </section>
 
-    <section id="international-experiences" class="white-light my-5">
+    <section id="international-experiences" class="white-light py-5">
         <div class="container">
             <div class="row">
-                <h1 class="text-center">EXPÉRIENCES INTERNATIONALLES</h1>
+                <h1 class="text-center">EXPÉRIENCES INTERNATIONALES</h1>
+                <p class="text-center">Cliquez sur les calques pour plus d'informations</p>
+            </div>
+            <div class="row">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1LDRvmWSvbgJb5zMELtSjSC09Dilzxx3W" width="100%" height="450px"></iframe>
             </div>
         </div>
     </section>
 
-    <section id="skills"  class="grey-light my-5">
+    <section id="skills"  class="grey-light py-5">
         <div class="container">
             <div class="row">
                 <h1 class="text-center">MES COMPÉTENCES</h1>
+                <p class="text-center">
+                    Mes compétences informatiques sont à votre disposition.
+                    <br>
+                    La philosophie de l'objet n'a plus de secret pour moi !
+                </p>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <h3>Mes logiciels favoris</h3>
+                </div>
+                <div class="col">
+                    <h3>Mes langages de programmation</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        Ces logiciels m'aident à mener à bien n'importe quel projet.
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        Les langages de programmation que je maîtrise sont très populaires et performants.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="skillbar clearfix " data-percent="95%">
+                        <div class="skillbar-title" style="background: #1fa6d8;"><span>AWS</span></div>
+                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
+                        <div class="skill-bar-percent Count">95</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skillbar clearfix " data-percent="95%">
+                        <div class="skillbar-title" style="background: #1fa6d8;"><span>Python</span></div>
+                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
+                        <div class="skill-bar-percent Count">95</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="skillbar clearfix " data-percent="95%">
+                        <div class="skillbar-title" style="background: #1fa6d8;"><span>Git</span></div>
+                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
+                        <div class="skill-bar-percent Count">95</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skillbar clearfix " data-percent="90%">
+                        <div class="skillbar-title" style="background: #1fa6d8;"><span>C#</span></div>
+                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
+                        <div class="skill-bar-percent Count">90</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="skillbar clearfix " data-percent="85%">
+                        <div class="skillbar-title" style="background: #1fa6d8;"><span>Jenkins</span></div>
+                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
+                        <div class="skill-bar-percent Count">85</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skillbar clearfix " data-percent="85%">
+                        <div class="skillbar-title" style="background: #1fa6d8;"><span>Java</span></div>
+                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
+                        <div class="skill-bar-percent Count">85</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="skillbar clearfix " data-percent="80%">
+                        <div class="skillbar-title" style="background: #1fa6d8;"><span>Docker</span></div>
+                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
+                        <div class="skill-bar-percent Count">80</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skillbar clearfix " data-percent="85%">
+                        <div class="skillbar-title" style="background: #1fa6d8;"><span>C++</span></div>
+                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
+                        <div class="skill-bar-percent Count">85</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="skillbar clearfix " data-percent="80%">
+                        <div class="skillbar-title" style="background: #1fa6d8;"><span>Puppet</span></div>
+                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
+                        <div class="skill-bar-percent Count">80</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skillbar clearfix " data-percent="75%">
+                        <div class="skillbar-title" style="background: #1fa6d8;"><span>R</span></div>
+                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
+                        <div class="skill-bar-percent Count">75</div>
+                    </div>
+                </div>
             </div>
         </div>
-    <section>
+    </section>
 
-    <section id="lastest-work" class="white-light my-5">
+    <section id="lastest-work" class="white-light py-5">
         <div class="container">
             <div class="row">
                 <h1 class="text-center">QUELQUES RÉFÉRENCES</h1>
@@ -323,7 +464,7 @@
         </div>
     </section>
 
-    <section id="contact-me"  class="grey-light my-5">
+    <section id="contact-me"  class="grey-light py-5">
         <div class="container">
             <div class="row">
                 <h1 class="text-center">CONTACTEZ-MOI</h1>
@@ -332,8 +473,8 @@
     </section>
 
     <script src="./scripts/jquery-3.6.0.js" ></script>
-    <script src='/path/to/jquery.keyframes.js'></script>
     <script src="./scripts/bootstrap.bundle.js" ></script>
     <script src="./scripts/my-script.js" ></script>
+    <script src="./scripts/skill-bar.js" ></script>
   </body>
 </html>

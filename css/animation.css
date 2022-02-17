@@ -1,0 +1,136 @@
+.fade-in-down {
+  display: none;
+}
+
+.fade-in-down-start {
+  animation-name: FadeInDown;
+  animation-duration: 1s;
+  transition-timing-function: linear;
+}
+
+@keyframes FadeInDown {
+  0% {
+    transform: translateY(-50vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes FadeInDown {
+  0% {
+    transform: translateY(-50vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes FadeInDown {
+  0% {
+    transform: translateY(-50vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes FadeInDown {
+  0% {
+    transform: translateY(-50vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes FadeInDown {
+  0% {
+    transform: translateY(-50vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in-up {
+  display: none;
+}
+
+.fade-in-up-start {
+  animation-name: FadeInUp;
+  animation-duration: 1s;
+  transition-timing-function: linear;
+}
+
+@keyframes FadeInUp {
+  0% {
+    transform: translateY(20vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes FadeInUp {
+  0% {
+    transform: translateY(20vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes FadeInUp {
+  0% {
+    transform: translateY(20vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes FadeInUp {
+  0% {
+    transform: translateY(20vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes FadeInUp {
+  0% {
+    transform: translateY(20vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.desktop-img {
+  transition: transform 0.7s ease-in-out;
+}
+.desktop-img:hover {
+  transform: rotate(360deg);
+}
