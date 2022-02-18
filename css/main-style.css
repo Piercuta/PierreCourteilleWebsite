@@ -12,12 +12,12 @@ body {
   }
 }
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
   html,
   body {
     font-size: 12px;
   }
-}
+} */
 
 /* Color  */
 
@@ -63,11 +63,11 @@ header .nav-item {
   letter-spacing: 0.15rem !important;
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
   .nav-text {
     letter-spacing: normal !important;
-  } 
-} */
+  }
+}
 
 /* Carousel */
 
@@ -138,6 +138,14 @@ header .nav-item {
   color: #ffffff;
   border-radius: 100px;
   text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .bullet-circle {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
 }
 
 /* Skills */

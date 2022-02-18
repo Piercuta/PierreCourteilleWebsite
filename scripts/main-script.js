@@ -55,3 +55,7 @@ $("#contact-me").one("mouseenter", function() {
   $(".fade-in-right-contact-form").show();
   $(".fade-in-right-contact-form").addClass( "fade-in-right-start" );
 });
+
+$('.flip').hover(function(){
+  $(this).find('.card').toggleClass('flipped');
+});
