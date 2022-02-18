@@ -134,3 +134,10 @@
 .desktop-img:hover {
   transform: rotate(360deg);
 }
+
+.env-img {
+  transition: transform 0.7s ease-in-out;
+}
+.env-img:hover {
+  transform: rotate(360deg);
+}

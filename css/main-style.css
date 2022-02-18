@@ -104,7 +104,12 @@ header .nav-item {
 .btn-services {
   color: #fff;
   background-color: #22b8f0;
-  border-color: #22b8f0;
+  /* border-color: #22b8f0; */
+}
+
+.btn-services:hover {
+  background-color: #212529;
+  color: #fff;
 }
 
 /* About Me */
@@ -133,4 +138,29 @@ header .nav-item {
   color: #ffffff;
   border-radius: 100px;
   text-align: center;
+}
+
+/* Skills */
+
+/* used by about-me and skills part */
+@media screen and (max-width: 576px) {
+  .flex-column-xs {
+    flex-direction: column;
+  }
+}
+
+/* Contact Form */
+
+.env-img {
+  font-size: 10rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+@media screen and (max-width: 780px) {
+  .env-img {
+    font-size: 7.5rem;
+    width: 7.5rem;
+    height: 7.5rem;
+  }
 }

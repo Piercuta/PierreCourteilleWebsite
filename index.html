@@ -12,6 +12,7 @@
         <link href="./css/main-style.css" rel="stylesheet" />
         <link href="./css/animation.css" rel="stylesheet" />
         <link href="./css/skill-bar.css" rel="stylesheet" />
+        <link href="./css/flip-card.css" rel="stylesheet" />
     </head>
   <body>
     
@@ -312,7 +313,7 @@
                     <h1 class="text-center">À PROPOS</h1>
                     <p class="text-center">Un développeur indépendant polyvalent !</p>
                 </div>
-                <div class="row ">
+                <div class="row flex-column-xs">
                     <div class="col">
                         <div class="row">
                             <div class="col d-flex">
@@ -373,16 +374,6 @@
 
     <section id="skills"  class="grey-light py-5">
         <div class="container-lg">
-
-            <div class="row">
-                <div class="col">
-
-                </div>
-                <div class="col">
-                    
-                </div>
-            </div>
-
             <div class="row">
                 <h1 class="text-center">MES COMPÉTENCES</h1>
                 <p class="text-center">
@@ -391,92 +382,37 @@
                     La philosophie de l'objet n'a plus de secret pour moi !
                 </p>
             </div>
-            <div class="row mt-5">
+
+            <div class="row flex-column-xs">
                 <div class="col">
+                    
                     <h3>Mes logiciels favoris</h3>
-                </div>
-                <div class="col">
-                    <h3>Mes langages de programmation</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
                     <p>
                         Ces logiciels m'aident à mener à bien n'importe quel projet.
                     </p>
-                </div>
-                <div class="col">
-                    <p>
-                        Les langages de programmation que je maîtrise sont très populaires et performants.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
                     <div class="skillbar clearfix " data-percent="95%">
                         <div class="skillbar-title" style="background: #1fa6d8;"><span>AWS</span></div>
                         <div class="skillbar-bar" style="background: #22b8f0;"></div>
                         <div class="skill-bar-percent Count">95</div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="skillbar clearfix " data-percent="95%">
-                        <div class="skillbar-title" style="background: #1fa6d8;"><span>Python</span></div>
-                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
-                        <div class="skill-bar-percent Count">95</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
                     <div class="skillbar clearfix " data-percent="95%">
                         <div class="skillbar-title" style="background: #1fa6d8;"><span>Git</span></div>
                         <div class="skillbar-bar" style="background: #22b8f0;"></div>
                         <div class="skill-bar-percent Count">95</div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="skillbar clearfix " data-percent="90%">
-                        <div class="skillbar-title" style="background: #1fa6d8;"><span>C#</span></div>
-                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
-                        <div class="skill-bar-percent Count">90</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
+
                     <div class="skillbar clearfix " data-percent="85%">
                         <div class="skillbar-title" style="background: #1fa6d8;"><span>Jenkins</span></div>
                         <div class="skillbar-bar" style="background: #22b8f0;"></div>
                         <div class="skill-bar-percent Count">85</div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="skillbar clearfix " data-percent="85%">
-                        <div class="skillbar-title" style="background: #1fa6d8;"><span>Java</span></div>
-                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
-                        <div class="skill-bar-percent Count">85</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
+
                     <div class="skillbar clearfix " data-percent="80%">
                         <div class="skillbar-title" style="background: #1fa6d8;"><span>Docker</span></div>
                         <div class="skillbar-bar" style="background: #22b8f0;"></div>
                         <div class="skill-bar-percent Count">80</div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="skillbar clearfix " data-percent="85%">
-                        <div class="skillbar-title" style="background: #1fa6d8;"><span>C++</span></div>
-                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
-                        <div class="skill-bar-percent Count">85</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
+
                     <div class="skillbar clearfix " data-percent="80%">
                         <div class="skillbar-title" style="background: #1fa6d8;"><span>Puppet</span></div>
                         <div class="skillbar-bar" style="background: #22b8f0;"></div>
@@ -484,11 +420,36 @@
                     </div>
                 </div>
                 <div class="col">
+                    <h3>Mes langages de programmation</h3>
+                    <p>
+                        Ces logiciels m'aident à mener à bien n'importe quel projet.
+                    </p>
+                    <div class="skillbar clearfix " data-percent="95%">
+                        <div class="skillbar-title" style="background: #1fa6d8;"><span>Python</span></div>
+                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
+                        <div class="skill-bar-percent Count">95</div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="90%">
+                        <div class="skillbar-title" style="background: #1fa6d8;"><span>C#</span></div>
+                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
+                        <div class="skill-bar-percent Count">90</div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="85%">
+                        <div class="skillbar-title" style="background: #1fa6d8;"><span>Java</span></div>
+                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
+                        <div class="skill-bar-percent Count">85</div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="85%">
+                        <div class="skillbar-title" style="background: #1fa6d8;"><span>C++</span></div>
+                        <div class="skillbar-bar" style="background: #22b8f0;"></div>
+                        <div class="skill-bar-percent Count">85</div>
+                    </div>
                     <div class="skillbar clearfix " data-percent="75%">
                         <div class="skillbar-title" style="background: #1fa6d8;"><span>R</span></div>
                         <div class="skillbar-bar" style="background: #22b8f0;"></div>
                         <div class="skill-bar-percent Count">75</div>
                     </div>
+                   
                 </div>
             </div>
         </div>
@@ -506,6 +467,52 @@
         <div class="container-lg">
             <div class="row">
                 <h1 class="text-center">CONTACTEZ-MOI</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                        <div class="d-flex justify-content-center mt-2">
+                            <i class="fa-solid fa-envelope env-img"></i>
+                        </div>
+                        <div class="d-flex justify-content-center my-4">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                    <h1 class="text-center">Une Question ? </h1> 
+                                    <h1 class="text-center">Un Projet ? </h1>
+                                    <h1 class="text-center">Un Renseignement ? </h1>
+                                  </div>
+                                  <div class="flip-card-back">
+                                    <h1 class="text-center align-middle">Une réponse sous les 24 heures</h1>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nom</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Sujet</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Sujet">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-services">
+                            Envoyer
+                        </button>
+                    </div>
+                  
+                </div>
+
             </div>
         </div>
     </section>
