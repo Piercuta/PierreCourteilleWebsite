@@ -26,7 +26,7 @@ body {
 }
 
 .white-light {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 /* Contact banner */
@@ -39,52 +39,56 @@ body {
   color: #999999;
 }
 
-/* Header Navbar */
-
-header .list-inline-item {
-  font-size: 1rem;
-}
-
 .list-inline-item a {
   color: #212529;
   text-decoration: none;
 }
 
-.list-inline-item a:hover {
-  color: #22b8f0;
+/* Navbar */
+
+header .nav-item {
+  font-size: 1rem !important;
+}
+
+.nav-item a {
+  color: #212529 !important;
+  text-decoration: none !important;
+}
+
+.nav-item a:hover {
+  color: #22b8f0 !important;
 }
 
 .nav-text {
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.15rem !important;
 }
 
-.logo {
-  /* width: max(10vw, 110px);
-  height: max(3vw, 35px); */
-  /* width: 10vw;
-  height: 3vw; */
-}
+/* @media screen and (max-width: 768px) {
+  .nav-text {
+    letter-spacing: normal !important;
+  } 
+} */
 
 /* Carousel */
 
-#carouselExampleCaptions h5 {
+.carousel-inner h5 {
   font-size: 3rem;
 }
 
-#carouselExampleCaptions p {
+.carousel-inner p {
   font-size: 2rem;
 }
 
 .carousel-caption-fs {
   right: 60%;
   left: 10%;
-  bottom: 30%;
+  top: 30%;
 }
 
 .carousel-caption-f {
-  right: 10%;
-  left: 70%;
-  bottom: 30%;
+  right: 8%;
+  left: 68%;
+  top: 25%;
   /* top: 30%; */
 }
 
@@ -110,6 +114,14 @@ header .list-inline-item {
   width: 15rem;
   height: 15rem;
   color: #22b8f0;
+}
+
+@media screen and (max-width: 780px) {
+  .desktop-img {
+    font-size: 10rem;
+    width: 10rem;
+    height: 10rem;
+  }
 }
 
 .bullet-circle {

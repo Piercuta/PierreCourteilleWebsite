@@ -16,7 +16,7 @@
   <body>
     
     <section id="informations" class="grey-light">
-        <div class="container">
+        <div class="container-lg">
             <div class="row ">
                <div class="col d-flex">
                     <ul class="list-inline my-auto">
@@ -25,7 +25,7 @@
                         <li class="list-inline-item"><a href="skype:pierre.courteille95?chat"><i class="fa-brands fa-skype"></i></a></li>
                     </ul>
                </div>
-               <div class="col d-flex justify-content-center">
+               <div class="col-2 d-flex justify-content-center">
                     <ul class="list-inline my-auto">
                         <li class="list-inline-item"><a href="#"><img src="./images/fr.gif"/></a></li>
                         <li class="list-inline-item"><a href="#"><img src="./images/en.gif"/></a></li>
@@ -42,8 +42,8 @@
         </div>
     </section>  
     
-    <header class="white-light sticky-top  d-none d-sm-block">
-        <div class="container">
+    <!-- <header class="white-light sticky-top  d-none d-sm-block">
+        <div class="container-lg">
             <div class="row justify-content-between" style="min-height: 90px;">
                 <div class="col-1 d-flex">
                     <a href="/" class="my-auto">
@@ -64,7 +64,43 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
+
+         
+        <nav class="navbar navbar-expand-md sticky-top navbar-light white-light">
+            <div class="container-lg">
+                <a href="/" class="my-auto">
+                    <img src="./images/finishLogoSiteWeb.png" class="logo" alt="logo">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav nav-text">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">ACCUEIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">MES SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">À PROPOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">MES COMPÉTENCES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lastest-work">RÉFÉRENCES</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link" href="#contact-me">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+  
+    </div>
 
     <section id="carousel" class="grey-light">
         <div class="container-fluid">
@@ -113,7 +149,7 @@
     </section>
 
     <section id="services" class="white-light py-5">
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
                 <h1 class="text-center">MES SERVICES</h1>
             </div>
@@ -131,15 +167,47 @@
                         </p>
 
                     </div>
+                </div>
+                <div class="col">
 
+                    <div class="fade-in-down">
+                   
+                        <div  class="text-center my-4">
+                            <i class="fa fa-cog icon"></i>
+                        </div>
+                        <h3 class="text-center my-4">Développeur full stack</h3>
+                        <p class="text-center my-4">
+                            Fort de nombreuses expériences dans la programmation, je peux vous aider à développer votre logiciel dans de nombreuses technologies (C, Pyhton, Java, AWS...).
+                        </p>
+                    </div>
+
+                    
+
+
+                </div>
+                <div class="col">
+                    <div class="fade-in-down">
+                        <div  class="text-center my-4">
+                            <i class="fa fa-mortar-board icon"></i>
+                        </div>
+                        <h3 class="text-center my-4">Formateur</h3>
+                        <p class="text-center my-4">
+                            Aimant transmettre, j'enseigne chaque année à de nombreux élèves les rudiments ainsi que des notions avancées de différents langages (Java, C#, C++, Python, Javascript).
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">   
                     <div class="text-center fade-in-up">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-services" data-bs-toggle="modal" data-bs-target="#ds-modal">
                             En savoir plus
                         </button>
                     </div>
-                    
-                    
+                
+                
                     <!-- Modal -->
                     <div class="modal fade" id="ds-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -174,23 +242,8 @@
                         </div>
                         </div>
                     </div>
-
-
-
                 </div>
                 <div class="col">
-
-                    <div class="fade-in-down">
-                   
-                        <div  class="text-center my-4">
-                            <i class="fa fa-cog icon"></i>
-                        </div>
-                        <h3 class="text-center my-4">Développeur full stack</h3>
-                        <p class="text-center my-4">
-                            Fort de nombreuses expériences dans la programmation, je peux vous aider à développer votre logiciel dans de nombreuses technologies (C, Pyhton, Java, AWS...).
-                        </p>
-                    </div>
-
                     <div class="text-center fade-in-up">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-services" data-bs-toggle="modal" data-bs-target="#fs-modal">
@@ -232,20 +285,8 @@
                         </div>
                     </div>
 
-
                 </div>
                 <div class="col">
-                    <div class="fade-in-down">
-                        <div  class="text-center my-4">
-                            <i class="fa fa-mortar-board icon"></i>
-                        </div>
-                        <h3 class="text-center my-4">Formateur</h3>
-                        <p class="text-center my-4">
-                            Aimant transmettre, j'enseigne chaque année à de nombreux élèves les rudiments ainsi que des notions avancées de différents langages (Java, C#, C++, Python, Javascript).
-                        </p>
-                    </div>
-
-
                     <div class="text-center fade-in-up">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-services" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -285,7 +326,6 @@
                         </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             
@@ -293,46 +333,61 @@
     </section>
 
     <section id="about-me" class="grey-light py-5">
-        <div class="container">
-            <div class="row">
-                <h1 class="text-center">À PROPOS</h1>
-                <p class="text-center">Un développeur indépendant polyvalent !</p>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="row">
-                        <div class="col-1"><span class="bullet-circle">1</span></div>
-                        <div class="col mx-2">
-                            <h3>Un développeur mathématicien</h3>
-                            <p>Mon cursus bi-disciplinaire (mathématiques et informatique) me permet de surmonter n'importe quel challenge.</p>
+        <div class="container-lg">
+           
+                <div class="row">
+                    <h1 class="text-center">À PROPOS</h1>
+                    <p class="text-center">Un développeur indépendant polyvalent !</p>
+                </div>
+                <div class="row ">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col d-flex">
+                                <div>
+                                    <span class="bullet-circle">1</span>
+                                </div>
+                                <div class="mx-2"> 
+                                    <h3> Un développeur mathématicien</h3>
+                                    <p>Mon cursus bi-disciplinaire (mathématiques et informatique) me permet de surmonter n'importe quel challenge.</p>
+                                </div>
+                               
+                            </div>
+                            
                         </div>
-                        
+                        <div class="row">
+                            <div class="col d-flex">
+                                <div>
+                                    <span class="bullet-circle">2</span>
+                                </div>
+                                <div  class="mx-2">
+                                    <h3>Un Français à l'aise avec l'anglais</h3>
+                                    <p>Loin de la langue de Molière j'ai su apprivoiser celle de Shakespeare.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col d-flex">
+                                <div>
+                                    <span class="bullet-circle">3</span>
+                                </div>
+                                <div  class="mx-2">
+                                    <h3>Un développeur manager</h3>
+                                    <p>Ayant manager une équipe de 25 personnes, je conçois les difficultés de la gestion d'une entreprise.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-1"><span class="bullet-circle">2</span></div>
-                        <div class="col mx-2">
-                            <h3>Un Français à l'aise avec l'anglais</h3>
-                            <p>Loin de la langue de Molière j'ai su apprivoiser celle de Shakespeare.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-1"><span class="bullet-circle">3</span></div>
-                        <div class="col mx-2">
-                            <h3>Un développeur manager</h3>
-                            <p>Ayant manager une équipe de 25 personnes, je conçois les difficultés de la gestion d'une entreprise.</p>
-                        </div>
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <i class="fa fa-desktop desktop-img"></i>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-center align-items-center">
-                    <i class="fa fa-desktop desktop-img"></i>
-                </div>
-            </div>
+            
             
         </div>
     </section>
 
     <section id="international-experiences" class="white-light py-5">
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
                 <h1 class="text-center">EXPÉRIENCES INTERNATIONALES</h1>
                 <p class="text-center">Cliquez sur les calques pour plus d'informations</p>
@@ -344,7 +399,7 @@
     </section>
 
     <section id="skills"  class="grey-light py-5">
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
                 <h1 class="text-center">MES COMPÉTENCES</h1>
                 <p class="text-center">
@@ -457,7 +512,7 @@
     </section>
 
     <section id="lastest-work" class="white-light py-5">
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
                 <h1 class="text-center">QUELQUES RÉFÉRENCES</h1>
             </div>
@@ -465,7 +520,7 @@
     </section>
 
     <section id="contact-me"  class="grey-light py-5">
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
                 <h1 class="text-center">CONTACTEZ-MOI</h1>
             </div>
