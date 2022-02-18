@@ -1,0 +1,124 @@
+html,
+body {
+  font-family: "Marvel", "Open Sans", "sans-serif";
+  font-size: 16px;
+  color: #212529;
+}
+
+@media screen and (max-width: 640px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+
+/* Color  */
+
+.grey-light {
+  background-color: #f5f5f5;
+}
+
+.white-light {
+  background-color: #ffffff;
+}
+
+/* Contact banner */
+
+#sm-contact .list-inline-item {
+  font-size: 0.9rem;
+}
+
+#informations i {
+  color: #999999;
+}
+
+/* Header Navbar */
+
+header .list-inline-item {
+  font-size: 1rem;
+}
+
+.list-inline-item a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.list-inline-item a:hover {
+  color: #22b8f0;
+}
+
+.nav-text {
+  letter-spacing: 0.15rem;
+}
+
+.logo {
+  /* width: max(10vw, 110px);
+  height: max(3vw, 35px); */
+  /* width: 10vw;
+  height: 3vw; */
+}
+
+/* Carousel */
+
+#carouselExampleCaptions h5 {
+  font-size: 3rem;
+}
+
+#carouselExampleCaptions p {
+  font-size: 2rem;
+}
+
+.carousel-caption-fs {
+  right: 60%;
+  left: 10%;
+  bottom: 30%;
+}
+
+.carousel-caption-f {
+  right: 10%;
+  left: 70%;
+  bottom: 30%;
+  /* top: 30%; */
+}
+
+/* Services */
+
+.icon {
+  font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
+  color: #22b8f0;
+}
+
+.btn-services {
+  color: #fff;
+  background-color: #22b8f0;
+  border-color: #22b8f0;
+}
+
+/* About Me */
+
+.desktop-img {
+  font-size: 15rem;
+  width: 15rem;
+  height: 15rem;
+  color: #22b8f0;
+}
+
+.bullet-circle {
+  display: block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  background-color: #22b8f0;
+  color: #ffffff;
+  border-radius: 100px;
+  text-align: center;
+}

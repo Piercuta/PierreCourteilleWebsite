@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Marvel";
+  src: url("../fonts/Marvel-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Bis";
+  src: url("../fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf");
+}
