@@ -44,8 +44,8 @@ $("#skills").one("mouseenter", function() {
 });
 
 $("#lastest-work").one("mouseenter", function() {
-  $(".fade-in-down-porto").show();
-  $(".fade-in-down-porto").addClass( "fade-in-down-start" );
+  $(".fade-in-up-porto").show();
+  $(".fade-in-up-porto").addClass( "fade-in-up-start" );
 });
 
 $("#contact-me").one("mouseenter", function() {
