@@ -128,7 +128,7 @@
             <div class="row">
                 <h1 class="text-center">MES SERVICES</h1>
             </div>
-            <div class="row">
+            <div class="row flex-column-xs">
                 <div class="col">
 
                     <div class="fade-in-down">
@@ -142,6 +142,14 @@
                         </p>
 
                     </div>
+
+                    <div class="text-center fade-in-up">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-services" data-bs-toggle="modal" data-bs-target="#ds-modal">
+                            En savoir plus
+                        </button>
+                    </div>
+
                 </div>
                 <div class="col">
 
@@ -156,7 +164,12 @@
                         </p>
                     </div>
 
-                    
+                    <div class="text-center fade-in-up">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-services" data-bs-toggle="modal" data-bs-target="#fs-modal">
+                            En savoir plus
+                        </button>
+                    </div>
 
 
                 </div>
@@ -171,18 +184,18 @@
                         </p>
                     </div>
 
+                    <div class="text-center fade-in-up">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-services" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            En savoir plus
+                        </button>
+                    </div>
+
                 </div>
             </div>
             <div class="row">
                 <div class="col">   
-                    <div class="text-center fade-in-up">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-services" data-bs-toggle="modal" data-bs-target="#ds-modal">
-                            En savoir plus
-                        </button>
-                    </div>
-                
-                
+                    
                     <!-- Modal -->
                     <div class="modal fade" id="ds-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -219,13 +232,6 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="text-center fade-in-up">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-services" data-bs-toggle="modal" data-bs-target="#fs-modal">
-                            En savoir plus
-                        </button>
-                    </div>
-                    
                     
                     <!-- Modal -->
                     <div class="modal fade" id="fs-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -262,14 +268,7 @@
 
                 </div>
                 <div class="col">
-                    <div class="text-center fade-in-up">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-services" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                            En savoir plus
-                        </button>
-                    </div>
-                    
-                    
+                   
                     <!-- Modal -->
                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -630,7 +629,7 @@
             </div>
 
 
-            <div class="row porto-folio fade-in-down-porto">
+            <div class="row porto-folio fade-in-up-porto">
                 <div class="container-lg d-flex align-items-center justify-content-center flex-wrap flex-column-xs">
                     <div class="box">
                         <div class="body">
@@ -752,10 +751,10 @@
             </div>
             <div class="row flex-column-xs">
                 <div class="col">
-                        <div class="d-flex justify-content-center mt-2">
+                        <div class="d-flex justify-content-center">
                             <i class="fa-solid fa-envelope env-img fade-in-down-env"></i>
                         </div>
-                        <div class="d-flex justify-content-center my-4">
+                        <div class="d-flex justify-content-center mt-2">
                             <div class="flip-card fade-in-up-msg">
                                 <div class="flip-card-inner">
                                   <div class="flip-card-front">
@@ -771,24 +770,24 @@
                         </div>
                 </div>
                 <div class="col fade-in-right-contact-form">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Nom</label>
+                    <div class="mb-3 mt-5">
+                        <!-- <label for="exampleFormControlInput1" class="form-label">Nom</label> -->
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <!-- <label for="exampleFormControlInput1" class="form-label">Email</label> -->
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Sujet</label>
+                        <!-- <label for="exampleFormControlInput1" class="form-label">Sujet</label> -->
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Sujet">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
+                        <!-- <label for="exampleFormControlTextarea1" class="form-label">Message</label> -->
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                    </div class="my-3">
                     <div class="text-center">
-                        <button type="button" class="btn btn-services">
+                        <button type="button" class="btn btn-services" onclick="sendEmail()">
                             Envoyer
                         </button>
                     </div>
@@ -801,6 +800,7 @@
 
     <script src="./scripts/jquery-3.6.0.js" ></script>
     <script src="./scripts/bootstrap.bundle.js" ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./scripts/main-script.js" ></script>
   </body>
 </html>

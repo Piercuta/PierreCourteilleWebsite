@@ -131,9 +131,9 @@ header .nav-item {
 
 .bullet-circle {
   display: block;
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   background-color: #22b8f0;
   color: #ffffff;
   border-radius: 100px;

@@ -1,6 +1,5 @@
 .fade-in-down,
-.fade-in-down-env,
-.fade-in-down-porto {
+.fade-in-down-env {
   display: none;
 }
 
@@ -67,7 +66,8 @@
 
 .fade-in-up,
 .fade-in-up-gmaps,
-.fade-in-up-msg {
+.fade-in-up-msg,
+.fade-in-up-porto {
   display: none;
 }
 
