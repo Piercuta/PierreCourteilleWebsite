@@ -1,11 +1,12 @@
 .fade-in-down,
 .fade-in-down-env {
-  display: none;
+  /* display: none; */
+  visibility: hidden;
 }
 
 .fade-in-down-start {
   animation-name: FadeInDown;
-  animation-duration: 1s;
+  animation-duration: 2s;
   transition-timing-function: linear;
 }
 
@@ -68,12 +69,13 @@
 .fade-in-up-gmaps,
 .fade-in-up-msg,
 .fade-in-up-porto {
-  display: none;
+  /* display: none; */
+  visibility: hidden;
 }
 
 .fade-in-up-start {
   animation-name: FadeInUp;
-  animation-duration: 1s;
+  animation-duration: 2s;
   transition-timing-function: linear;
 }
 
@@ -147,17 +149,19 @@
 }
 
 .fade-in-left {
-  display: none;
+  visibility: hidden;
+  /* display: none; */
 }
 
 .fade-in-left,
 .fade-in-left-skills {
-  display: none;
+  visibility: hidden;
+  /* display: none; */
 }
 
 .fade-in-left-start {
   animation-name: FadeInLeft;
-  animation-duration: 1s;
+  animation-duration: 2s;
   transition-timing-function: linear;
 }
 
@@ -219,12 +223,13 @@
 .fade-in-right,
 .fade-in-right-skills,
 .fade-in-right-contact-form {
-  display: none;
+  visibility: hidden;
+  /* display: none; */
 }
 
 .fade-in-right-start {
   animation-name: FadeInRight;
-  animation-duration: 1s;
+  animation-duration: 2s;
   transition-timing-function: linear;
 }
 
