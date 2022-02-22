@@ -79,6 +79,16 @@ header .nav-item {
   font-size: 2rem;
 }
 
+@media screen and (max-width: 950px) {
+  .carousel-inner h5 {
+    font-size: 2.5rem;
+  }
+
+  .carousel-inner p {
+    font-size: 1.5rem;
+  }
+}
+
 .carousel-caption-fs {
   right: 60%;
   left: 10%;
