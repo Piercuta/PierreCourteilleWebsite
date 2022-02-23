@@ -73,7 +73,7 @@ var languages = {
     "pf-4": "Formation, Development, C#, Html, Css, Javascript, JMeter, MySql...",
     "pf-5": "Optimization, Development, .Net Core API, Html, Css, JS, MySql...",
     "pf-6": "Optimization, Development, NodeJS, DynamoDB...",
-    "pf-button": "Plus de détails",
+    "pf-button": "More details",
     "pf-ao-1": "Ad Opt is a company treating the airline crew planning optimization. This problem is a major issue for any company, a poor crew planning optimization can cause many financial losses.",
     "pf-ao-2": "I had the responsibility to improve the algorithms which generated these schedules. A1% improvement in the solution represented a multi-million dollar gain for the company !",
     "pf-ao-3": "After understanding the problem theorically. I have significantly improved the performance of the algorithm.",
