@@ -97,7 +97,12 @@ var languages = {
     "pf-ftz-2": "Tasks :",
     "pf-ftz-3": "1 - Improve data models.",
     "pf-ftz-4": "2 - Algorithm optimization (NodeJS).",
-    "pf-ftz-5": "3 - Clustering all morphologies."
+    "pf-ftz-5": "3 - Clustering all morphologies.",
+    "pf-btb-1": "Behind The Bet is the number one statitics provider for sport bets.",
+    "pf-btb-2": "Tasks :",
+    "pf-btb-3": "1 - MySql queries optimization.",
+    "pf-btb-4": "2 - Automatic statistics update with Aws Lambda.",
+    "pf-btb-5": "3 - Time execution improvement (X10)."
   },
   fr: {
     "nav-home": "ACCUEIL",
@@ -184,11 +189,16 @@ var languages = {
     "pf-i-4": "2 - POO (Classes, héritages...).",
     "pf-i-5": "3 - ASP .Net Core MVC.",
     "pf-i-6": "4 - Persistance des données (LINQ, Entity framework).",
-    "pf-ftz-1": "Depuis 2013, fitizzy met un point d’honneur à améliorer l’expérience shopping de millions de consommateurs. Son expertise de la donnée morphologique est mise à disposition de ses partenaires.",
+    "pf-ftz-1": "Depuis 2013, fitizzy met un point d'honneur à améliorer l'expérience shopping de millions de consommateurs. Son expertise de la donnée morphologique est mise à disposition de ses partenaires.",
     "pf-ftz-2": "Réalisations :",
     "pf-ftz-3": "1 - Amélioration du modèle de données.",
     "pf-ftz-4": "2 - Optimisation des algorithmes (NodeJS).",
-    "pf-ftz-5": "3 - Classification des morphologies du monde entier."
+    "pf-ftz-5": "3 - Classification des morphologies du monde entier.",
+    "pf-btb-1": "Behind The Bet est le fournisseur N°1 de statistiques détaillées pour les paris sportifs . Lancée en 2019 par une équipe passionnée de sports, de paris sportifs et de mathématiques/statistiques, Behind The Bet tire profit de l'expérience et des connaissances de ses fondateurs.",
+    "pf-btb-2": "Réalisations :",
+    "pf-btb-3": "1 - Amélioration et Optimisation des requêtes MySql.",
+    "pf-btb-4": "2 - Mise à jour automatique des statistiques via Aws Lambda.",
+    "pf-btb-5": "3 - Amélioration du temps d'exécution (X10)."
   }
 
 
