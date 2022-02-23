@@ -59,10 +59,10 @@ function animate_lastest_work() {
   $(".fade-in-up-porto").addClass("fade-in-up-start");
 }
 function animate_contact_me() {
-  $(".fade-in-down-env").css("visibility", "visible");
-  $(".fade-in-down-env").addClass("fade-in-down-start");
-  $(".fade-in-up-msg").css("visibility", "visible");
-  $(".fade-in-up-msg").addClass("fade-in-up-start");
+  $(".fade-in-left-env").css("visibility", "visible");
+  $(".fade-in-left-env").addClass("fade-in-left-start");
+  $(".fade-in-left-msg").css("visibility", "visible");
+  $(".fade-in-left-msg").addClass("fade-in-left-start");
   $(".fade-in-right-contact-form").css("visibility", "visible");
   $(".fade-in-right-contact-form").addClass("fade-in-right-start");
 }

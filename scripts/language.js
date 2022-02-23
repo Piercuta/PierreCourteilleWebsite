@@ -196,8 +196,26 @@ function loadLanguage(lang){
 
 langsLinks.forEach(elem => {
   elem.onclick = function() {
-    loadLanguage(elem.attributes['data-lang'].nodeValue)
+    loadLanguage(elem.attributes['data-lang'].nodeValue);
   };
 });
+
+function LoadLang(){
+  if (window.location.hash)
+  {
+    if (window.location.hash === '#en')
+    {
+      loadLanguage('en');
+    }
+    if(window.location.hash === '#fr')
+    {
+      loadLanguage('fr');
+    }
+  }
+  else
+  {
+    loadLanguage('fr');
+  }
+}
 
 

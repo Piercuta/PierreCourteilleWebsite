@@ -1,5 +1,4 @@
-.fade-in-down,
-.fade-in-down-env {
+.fade-in-down {
   /* display: none; */
   visibility: hidden;
 }
@@ -67,7 +66,6 @@
 
 .fade-in-up,
 .fade-in-up-gmaps,
-.fade-in-up-msg,
 .fade-in-up-porto {
   /* display: none; */
   visibility: hidden;
@@ -154,7 +152,9 @@
 }
 
 .fade-in-left,
-.fade-in-left-skills {
+.fade-in-left-skills,
+.fade-in-left-msg,
+.fade-in-left-env {
   visibility: hidden;
   /* display: none; */
 }
