@@ -93,6 +93,11 @@ var languages = {
     "pf-i-4": "2 - Objected oriented object (Classes, inheritance...).",
     "pf-i-5": "3 - ASP .Net Core MVC.",
     "pf-i-6": "4 - Data persistence (LINQ, Entity framework).",
+    "pf-ftz-1": "Since 2013, fitizzy improve consumer shopping experiences. Through morphological data analysis, fitizzy help you to choose your size articles.",
+    "pf-ftz-2": "Tasks :",
+    "pf-ftz-3": "1 - Improve data models.",
+    "pf-ftz-4": "2 - Algorithm optimization (NodeJS).",
+    "pf-ftz-5": "3 - Clustering all morphologies."
   },
   fr: {
     "nav-home": "ACCUEIL",
@@ -179,7 +184,15 @@ var languages = {
     "pf-i-4": "2 - POO (Classes, héritages...).",
     "pf-i-5": "3 - ASP .Net Core MVC.",
     "pf-i-6": "4 - Persistance des données (LINQ, Entity framework).",
+    "pf-ftz-1": "Depuis 2013, fitizzy met un point d’honneur à améliorer l’expérience shopping de millions de consommateurs. Son expertise de la donnée morphologique est mise à disposition de ses partenaires.",
+    "pf-ftz-2": "Réalisations :",
+    "pf-ftz-3": "1 - Amélioration du modèle de données.",
+    "pf-ftz-4": "2 - Optimisation des algorithmes (NodeJS).",
+    "pf-ftz-5": "3 - Classification des morphologies du monde entier."
   }
+
+
+
 }
 const langs = document.querySelectorAll(".lang");
 const langsLinks = document.querySelectorAll(".lang-link");
