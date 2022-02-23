@@ -1,56 +1,50 @@
+function submitToAPI() {
+//       var URL = "API Gateway";
 
-// Load the AWS SDK for Node.js
-var AWS = require('aws-sdk');
-// Set the region 
-AWS.config.update({region: 'eu-west-1'});
 
-// Create sendEmail params 
-var params = {
-  Destination: { /* required */
-    CcAddresses: [
-      'EMAIL_ADDRESS',
-      /* more items */
-    ],
-    ToAddresses: [
-      'EMAIL_ADDRESS',
-      /* more items */
-    ]
-  },
-  Message: { /* required */
-    Body: { /* required */
-      Html: {
-       Charset: "UTF-8",
-       Data: "HTML_FORMAT_BODY"
-      },
-      Text: {
-       Charset: "UTF-8",
-       Data: "TEXT_FORMAT_BODY"
+  var name = document.getElementById("contact-ph-1").value;
+  var email = document.getElementById("contact-ph-2").value;
+  var subject = document.getElementById("contact-ph-3").value;
+  var message = document.getElementById("contact-ph-4").value;
+  if (name=="" || subject=="" || email=="" || message=="")
+    {
+        alert("Please Fill All Required Field");
+        return false;
+    }
+
+  nameRE = /^[A-Z]{1}[a-z]{2,20}[ ]{1}[A-Z]{1}[a-z]{2,20}/;
+  if(!nameRE.test(name)) {
+  alert("Name entered, is not valid");
+    return false;
+  }
+
+  emailRE = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if(!emailRE.test(email)) {
+  alert("Email Address entered, is not valid");
+    return false;
+  }
+    var data = {
+      name : name,
+      subject : subject,
+      email : email,
+      message : message
+    };
+
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("POST", "https://dkkhd6im9j.execute-api.eu-west-1.amazonaws.com/prod/email");
+  xmlhttp.setRequestHeader("Content-Type", "application/json");
+  xmlhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
+  xmlhttp.send(JSON.stringify(data));
+  xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState === 4) {
+      var response = JSON.parse(xmlhttp.responseText);
+      if (xmlhttp.status === 200 ) {
+        console.log('successful');
+      } 
+      else {
+          console.log('failed');
       }
-     },
-     Subject: {
-      Charset: 'UTF-8',
-      Data: 'Test email'
-     }
-    },
-  Source: 'pierre.courteille@gmail.com', /* required */
-  ReplyToAddresses: [
-     'EMAIL_ADDRESS',
-    /* more items */
-  ],
-};
+    }
+  }
 
-// Create the promise and SES service object
-var sendPromise = new AWS.SES({apiVersion: '2010-12-01'}).sendEmail(params).promise();
-
-// Handle promise's fulfilled/rejected states
-
-function sendEmail(){
-  sendPromise.then(
-    function(data) {
-      console.log(data.MessageId);
-    }).catch(
-      function(err) {
-      console.error(err, err.stack);
-    });
-}
-
+} 
