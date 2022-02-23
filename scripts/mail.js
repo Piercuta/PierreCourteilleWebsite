@@ -31,13 +31,11 @@ function submitToAPI() {
     };
 
   var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("POST", "https://dkkhd6im9j.execute-api.eu-west-1.amazonaws.com/prod/email");
+  xmlhttp.open("POST", "https://dkkhd6im9j.execute-api.eu-west-1.amazonaws.com/new/email");
   xmlhttp.setRequestHeader("Content-Type", "application/json");
-  xmlhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
-  xmlhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
-  xmlhttp.setRequestHeader("Access-Control-Allow-Credentials", "true");
-  xmlhttp.setRequestHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
-  xmlhttp.setRequestHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
+  // xmlhttp.setRequestHeader("Access-Control-Allow-Credentials", "true");
+  // xmlhttp.setRequestHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+  // xmlhttp.setRequestHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
   xmlhttp.send(JSON.stringify(data));
   xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState === 4) {
