@@ -43,6 +43,7 @@ var languages = {
     "section-experiences": "INTERNATIONAL EXPERIENCES",
     "section-experiences-st": "Click on layer to know more...",
     "international-map": "https://www.google.com/maps/d/embed?mid=1zSVsrElggpOberaM551ic8Uu9U2sgdDM",
+    "cv-link": "https://docs.google.com/document/d/1xU3T2Vm4IFiRsgG4vIbLxDJ-H89_Xn_tO7Xd6C3RfhE",
     "ser-skills-st-1":"My computer skills are ready for you.",
     "ser-skills-st-2":"The object oriented programming has no secret for me !",
     "ser-skills-title-1":"Favourite Softwares",
@@ -135,6 +136,7 @@ var languages = {
     "section-experiences": "MES EXPÉRIENCES INTERNATIONALES",
     "section-experiences-st": "Cliquez sur les calques pour plus d'informations",
     "international-map": "https://www.google.com/maps/d/embed?mid=1LDRvmWSvbgJb5zMELtSjSC09Dilzxx3W",
+    "cv-link": "https://docs.google.com/document/d/1DzbaT3S03J48wHF0GRSPc4ULovwsLbiiliKRVR4uPAI",
     "ser-skills-st-1":"Mes compétences informatiques sont à votre disposition.",
     "ser-skills-st-2":"La philosophie de l'objet n'a plus de secret pour moi !",
     "ser-skills-title-1":"Mes logiciels favoris",
@@ -184,12 +186,17 @@ const langsLinks = document.querySelectorAll(".lang-link");
 
 function loadLanguage(lang){
     langs.forEach(elem => {
-      elem.textContent = languages[lang][elem.id];
       if(elem.placeholder){
         elem.placeholder = languages[lang][elem.id]
       }
       if(elem.src){
         elem.src = languages[lang][elem.id]
+      }
+      if(elem.href && elem.id === "cv-link"){
+        elem.href = languages[lang][elem.id]
+      }
+      else{
+        elem.textContent = languages[lang][elem.id];
       }
     });
 }
