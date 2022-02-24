@@ -1,0 +1,14 @@
+version: 0.2
+run-as: root
+artifacts:
+  files:
+    - '**/*'
+phases:
+    install:
+        runtime-versions:
+            python: 3.7
+        commands:
+        - ls -hal
+    build:
+        commands:
+        - find . -type f -name "mail.js" -print0 | xargs -0 sed -i -e "s|{http_email}|$httpEmail|g"

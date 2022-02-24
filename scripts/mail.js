@@ -31,7 +31,7 @@ function submitToAPI() {
     };
 
   var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("POST", "https://dkkhd6im9j.execute-api.eu-west-1.amazonaws.com/new/email");
+  xmlhttp.open("POST", "{http_email}");
   xmlhttp.setRequestHeader("Content-Type", "application/json");
   // xmlhttp.setRequestHeader("Access-Control-Allow-Credentials", "true");
   // xmlhttp.setRequestHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
