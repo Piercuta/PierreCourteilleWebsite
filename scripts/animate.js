@@ -70,7 +70,6 @@ function animate_contact_me() {
 const observer1 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      console.log("services visible");
       animate_services();
     }
   });
@@ -81,7 +80,6 @@ observer1.observe(document.querySelector("#services"));
 const observer2 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      console.log("about me visible");
       animate_about_me();
     }
   });
@@ -92,7 +90,6 @@ observer2.observe(document.querySelector("#about-me"));
 const observer3 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      console.log("international visible");
       animate_international();
     }
   });
@@ -103,7 +100,6 @@ observer3.observe(document.querySelector("#international-experiences"));
 const observer4 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      console.log("skill visible");
       animate_skills();
     }
   });
@@ -114,7 +110,6 @@ observer4.observe(document.querySelector("#skills"));
 const observer5 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      console.log("lastestwork visible");
       animate_lastest_work();
     }
   });
@@ -125,7 +120,6 @@ observer5.observe(document.querySelector("#lastest-work"));
 const observer6 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      console.log("contact-me visible");
       animate_contact_me();
     }
   });

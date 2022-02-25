@@ -36,7 +36,7 @@ function submitToAPI() {
 
 
   $('#contact-button').hide();
-  $('#contact-button-waiting').show();
+  $('#wait-button').show();
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open("POST", "{http_email}");
   xmlhttp.setRequestHeader("Content-Type", "application/json");
@@ -47,7 +47,7 @@ function submitToAPI() {
       if (xmlhttp.status === 200 ) {
         console.log('mail sent successfully...');
         $('#contact-button').show();
-        $('#contact-button-waiting').hide();
+        $('#wait-button').hide();
         $('#succes-sent').show();
         setTimeout(succes_msg, 3000);
       } 
