@@ -1,5 +1,9 @@
+function succes_msg() {
+  $('#succes-sent').hide();
+}
+
 function submitToAPI() {
-//       var URL = "API Gateway";
+
 
 
   var name = document.getElementById("contact-ph-1").value;
@@ -8,19 +12,19 @@ function submitToAPI() {
   var message = document.getElementById("contact-ph-4").value;
   if (name=="" || subject=="" || email=="" || message=="")
     {
-        alert("Please Fill All Required Field");
+        alert($("#require-fields").text());
         return false;
     }
 
-  nameRE = /^[A-Z]{1}[a-z]{2,20}[ ]{1}[A-Z]{1}[a-z]{2,20}/;
-  if(!nameRE.test(name)) {
-  alert("Name entered, is not valid");
-    return false;
-  }
+  // nameRE = /^[A-Z]{1}[a-z]{2,20}[ ]{1}[A-Z]{1}[a-z]{2,20}/;
+  // if(!nameRE.test(name)) {
+  // alert("Name entered, is not valid");
+  //   return false;
+  // }
 
   emailRE = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if(!emailRE.test(email)) {
-  alert("Email Address entered, is not valid");
+  alert($("#email-no-valid").text());
     return false;
   }
     var data = {
@@ -30,21 +34,26 @@ function submitToAPI() {
       message : message
     };
 
+
+  $('#contact-button').hide();
+  $('#contact-button-waiting').show();
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open("POST", "{http_email}");
   xmlhttp.setRequestHeader("Content-Type", "application/json");
-  // xmlhttp.setRequestHeader("Access-Control-Allow-Credentials", "true");
-  // xmlhttp.setRequestHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
-  // xmlhttp.setRequestHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
   xmlhttp.send(JSON.stringify(data));
   xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState === 4) {
       var response = JSON.parse(xmlhttp.responseText);
       if (xmlhttp.status === 200 ) {
-        console.log('successful...');
+        console.log('mail sent successfully...');
+        $('#contact-button').show();
+        $('#contact-button-waiting').hide();
+        $('#succes-sent').show();
+        setTimeout(succes_msg, 3000);
       } 
       else {
-          console.log('failed...');
+          console.log('mail sent failed...');
+          $('#fail-sent').show();
       }
     }
   }

@@ -102,7 +102,11 @@ var languages = {
     "pf-btb-2": "Tasks :",
     "pf-btb-3": "1 - MySql queries optimization.",
     "pf-btb-4": "2 - Automatic statistics update with Aws Lambda.",
-    "pf-btb-5": "3 - Time execution improvement (X10)."
+    "pf-btb-5": "3 - Time execution improvement (X10).",
+    "succes-sent": "Your message has been sent successfully",
+    "fail-sent": "Something wrong happened... Please send your message to : ",
+    "require-fields": "All fields should be filled !",
+    "email-no-valid": "Email is not valid !"
   },
   fr: {
     "nav-home": "ACCUEIL",
@@ -198,7 +202,11 @@ var languages = {
     "pf-btb-2": "Réalisations :",
     "pf-btb-3": "1 - Amélioration et Optimisation des requêtes MySql.",
     "pf-btb-4": "2 - Mise à jour automatique des statistiques via Aws Lambda.",
-    "pf-btb-5": "3 - Amélioration du temps d'exécution (X10)."
+    "pf-btb-5": "3 - Amélioration du temps d'exécution (X10).",
+    "succes-sent": "Votre message a bien été envoyé",
+    "fail-sent": "Un problème est survenu... Veuillez envoyer votre message à l'adresse suivante : ",
+    "require-fields": "Vous devez remplir tous les champs !",
+    "email-no-valid": "L'email n'est pas valide !"
   }
 
 
